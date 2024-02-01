@@ -1,0 +1,60 @@
+
+
+.s5page2
+    width: 100%
+    height: auto
+    display: flex
+    justify-content: center
+    .s5page2Content
+        padding-bottom: 100px
+        width: 70%
+        height: auto
+        .faqTitle
+            width: 100%
+            height: 60px
+            background: $dark
+            color: white
+            margin-bottom: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 22px
+            font-weight: 900
+        .question
+            border-style: none
+            width: 100%
+            height: auto
+            font-size: 16px
+            text-align: left
+            padding-top: 20px
+            padding-bottom: 20px
+            padding-left: 30px
+            padding-right: 30px
+            letter-spacing: 2px
+            // font-weight: 900
+            background: white
+            // outline: 2px solid $dark
+            border-left: 2px solid $dark
+            border-right: 2px solid $dark
+            border-top: 2px solid $dark
+        .answer
+            font-size: 16px
+            line-height: 25px
+            border-left: 2px solid $dark
+            border-right: 2px solid $dark
+            // outline: 2px solid $dark
+            background: #f2f2f2
+            // background: $yellow
+            // background-color: white
+            max-height: 0
+            overflow: hidden
+            transition: max-height 0.2s ease-out
+            p
+                padding: 10px 30px 10px 30px
+        .answer:last-child
+            border-bottom: 2px solid $dark
+            
+
+.displayAnswer
+    display: block
+    // height: 20px

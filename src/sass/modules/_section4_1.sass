@@ -1,0 +1,30 @@
+@keyframes carouselSlide 
+    0%  
+        transform: translateX(0%) 
+    100%  
+        transform: translateX(-100%) 
+
+    
+.s4page1
+    width: 100%
+    height: 220px
+    margin: 0
+    padding: 0
+    white-space: nowrap !important
+    display: flex
+    overflow: hidden !important
+    background: #f2f2f2
+    .carousel
+        background: #f2f2f2
+        display: flex
+        align-items: center
+        // width: auto
+        // overflow: hidden !important
+        align-items: center
+        // background: $yellow 
+        height: 100%
+        // border-top: 2px solid $dark
+        // border-bottom: 2px solid $dark
+        white-space: nowrap !important
+        animation: 50s carouselSlide infinite linear
+        

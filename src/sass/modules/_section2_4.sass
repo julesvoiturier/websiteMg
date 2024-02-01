@@ -1,0 +1,96 @@
+
+.aboutUsSection
+    width: 100%
+    height: auto
+    display: flex
+    justify-content: center
+    .aboutUsContent
+        padding-top: 100px
+        padding-bottom: 100px
+        width: 70%
+        height: auto
+        .aboutUsImage
+            width: 100%
+            height: 500px
+            // background: red
+            // margin-top: 100px
+            border: 2px solid $dark
+            background-image: url(./../../public/src/img/bannerImage4.avif)
+            background-position: bottom
+            background-size: 100%
+        .textContentAboutUs
+            // margin-bottom: 100px
+            font-size: 16px
+            display: flex
+            height: 400px
+            gap: 100px
+            line-height: 25px
+            .aboutUsText1
+                text-align: justify
+                width: 50%
+                height: 100%
+                // background: green
+            .aboutUsText2
+                text-align: justify
+                width: 50%
+                height: 100%
+                // background: blue
+
+
+@media (max-width: 992px) and (min-width: 769px)
+
+    .textContentAboutUs
+        flex-direction: column
+        gap: 40px !important
+    .aboutUsText1
+        width: 100% !important
+        font-size: 12px
+    .aboutUsText2
+        width: 100% !important
+        font-size: 12px
+    .aboutUsImage
+        height: 300px !important
+        margin-top: 100px
+    
+
+@media (max-width: 768px) and (min-width: 577px)
+
+    .textContentAboutUs
+        flex-direction: column
+        gap: 40px !important
+    .aboutUsText1
+        width: 100% !important
+        font-size: 16px
+    .aboutUsText2
+        width: 100% !important
+        font-size: 16px
+    .aboutUsImage
+        height: 250px !important
+        margin-top: 380px
+
+@media (max-width: 576px)
+
+    .aboutUsContent
+        padding-top: 60px !important
+        padding-bottom: 60px !important
+
+    .textContentAboutUs
+        flex-direction: column
+        gap: 40px !important
+        line-height: 20px !important
+    .aboutUsText1
+        // text-align: center !important
+        width: 100% !important
+        font-size: 12px
+        hyphens: auto !important
+
+    .aboutUsText2
+        // text-align: center !important
+        width: 100% !important
+        font-size: 12px
+        hyphens: auto !important
+    .aboutUsImage
+        height: 200px !important
+        margin-top: 450px
+
+

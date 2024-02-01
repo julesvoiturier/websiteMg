@@ -1,0 +1,7 @@
+Sections width => 70%
+
+text
+
+laptop L 16px   title 22px
+laptop 12px     title 20px
+mobile 12px    title 18px

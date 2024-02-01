@@ -1,0 +1,103 @@
+.jobsSection
+    width: 100%
+    height: auto
+    // background: red
+    display: flex
+    justify-content: center
+    background: #f2f2f2
+    border-top: 2px solid $dark
+    .jobsSectionContainer
+        padding-top: 100px
+        padding-bottom: 100px
+        width: 70%
+        height: 100%
+        // background: blue
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        gap: 40px
+        .jobCard
+            width: 48%
+            display: flex
+            outline: 2px solid $dark
+            height: 250px
+            .jobImage
+                border-right: 2px solid $dark
+                width: 30%
+                height: 100%
+                display: none
+            .jobText
+                font-size: 16px
+                width: 100%
+                background: white
+                .jobTitle
+                    background: $dark
+                    color: white
+                    border-bottom: 2px solid $dark
+                    font-weight: 900
+                    font-size: 22px
+                    padding: 30px
+                    padding-right: 30px
+                    transition: 0.1s
+                .jobDescription
+                    padding-top: 30px
+                    padding-bottom: 30px
+                    padding-left: 30px
+                    padding-right: 30px
+
+
+@keyframes hoverJob
+    0%
+        margin-top: 0px
+        margin-bottom: 0px
+    50%
+        margin-bottom: 10px
+        margin-top: -10px
+    100%
+        margin-bottom: 0px
+        margin-top: 0px
+
+.jobCard:hover
+    animation: hoverJob 0.3s 
+    .jobTitle
+        background: $yellow !important
+        color: black !important
+
+
+
+
+@media (max-width: 992px) and (min-width: 769px)
+
+    .jobCard
+        width: 100% !important
+        height: 200px !important
+    .jobText
+        font-size: 12px !important
+    .jobTitle
+        font-size: 20px !important
+
+
+@media (max-width: 768px) and (min-width: 577px)
+
+    .jobCard
+        width: 100% !important
+        height: 220px !important
+    .jobText
+        font-size: 16px !important
+    .jobTitle
+        font-size: 20px !important
+
+
+
+@media (max-width: 576px)
+
+    .jobImage
+        display: none
+    .jobCard
+        width: 100% !important
+        height: 250px !important
+    .jobText
+        width: 100% !important
+        font-size: 12px !important
+    .jobTitle
+        font-size: 18px !important
