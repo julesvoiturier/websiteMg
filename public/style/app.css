@@ -822,7 +822,7 @@ main .s2page1 .textboxContainer1 div {
   align-items: center;
   width: 30%;
   height: 100%;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 900;
 }
 .s3page1 .eventsContainer .eventToCome .eventName {
@@ -830,7 +830,8 @@ main .s2page1 .textboxContainer1 div {
   height: 100%;
   display: flex;
   justify-content: left;
-  padding-left: 9%;
+  padding-left: 5%;
+  padding-right: 5%;
   align-items: center;
   font-size: 18px;
 }
@@ -850,19 +851,18 @@ main .s2page1 .textboxContainer1 div {
 }
 @media (max-width: 576px) {
   .s3page1 {
-    padding-top: 50px;
-    padding-bottom: 50px;
     flex-direction: column;
   }
   .s3page1 .eventsContainer {
-    height: 300px;
-    justify-content: left;
-    gap: 20px;
+    flex-direction: column;
   }
-  .s3page1 .eventsContainer .eventToCome {
-    height: 60px;
-    gap: 20px;
-    justify-content: center;
+  .s3page1 .eventsContainer .eventToCome .date {
+    font-size: 22px;
+    width: 40% !important;
+  }
+  .s3page1 .eventsContainer .eventToCome .eventName {
+    width: 60% !important;
+    font-size: 16px;
   }
 }
 @keyframes carouselSlide {
@@ -1460,11 +1460,11 @@ main .s2page1 .textboxContainer1 div {
     font-size: 16px !important;
   }
   .long {
-    font-size: 16px !important;
+    font-size: 14px !important;
     text-align: center;
   }
   .short {
-    font-size: 16px !important;
+    font-size: 14px !important;
     text-align: center;
   }
   .trainingTitle {
@@ -1472,12 +1472,15 @@ main .s2page1 .textboxContainer1 div {
     margin: 0px !important;
     padding: 0px !important;
     margin-top: 25px !important;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .formationTitle {
     padding-top: 20px;
     padding-right: 0px !important;
     margin-bottom: 0px !important;
     width: 100% !important;
+    height: 150px !important;
   }
   .formationDate {
     display: none !important;
@@ -1980,6 +1983,37 @@ main .s2page1 .textboxContainer1 div {
   .s3page3 .s3page3Container .s3text p {
     text-align: center;
     font-size: 16px;
+    margin: 0px;
+  }
+  .s3page3 .s3page3Container iframe {
+    height: 100%;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .s3page3 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .s3page3 .s3page3Container {
+    overflow: hidden;
+    width: 70%;
+    height: 100%;
+  }
+  .s3page3 .s3page3Container .s3text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background: rgb(167, 132, 255);
+    padding: 30px;
+  }
+  .s3page3 .s3page3Container .s3text p {
+    text-align: center;
+    font-size: 12px;
     margin: 0px;
   }
   .s3page3 .s3page3Container iframe {

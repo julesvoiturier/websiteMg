@@ -1,4 +1,5 @@
 import data from './../../json/dataMolengeek.json' assert {type: "json"}
+
 let socialLinks = data.reseauxSociaux
 let footerIcons = document.querySelectorAll(".footerLink")
 

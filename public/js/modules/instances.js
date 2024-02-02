@@ -1,12 +1,6 @@
 import data from '../../json/dataMolengeek.json' assert {type: "json"}
 
 
-// //!BURGER MENU TOGGLE
-// export let burgerMenuButton = document.querySelector(".burgerMenu")
-// export let burgerMenu = document.querySelector(".actualBurgerMenu")
-// burgerMenuButton.addEventListener("click", () => {
-//     burgerMenu.classList.toggle("toggleDisplay")
-// })
 //!BURGER MENU TOGGLE
 let burgerMenuButton = document.querySelector(".burgerMenu")
 let burgerMenu = document.querySelector(".actualBurgerMenu")
